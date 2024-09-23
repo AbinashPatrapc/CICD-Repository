@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: sms970/cicd-testingproject:latest
+          image: sms970/cicd-testingproject:${+pipeline.sequenceId}
           ports:
             - containerPort: 9898
           imagePullPolicy: Always
