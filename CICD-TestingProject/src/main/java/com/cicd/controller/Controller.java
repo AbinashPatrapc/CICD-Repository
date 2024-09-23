@@ -1,6 +1,8 @@
 package com.cicd.controller;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +20,6 @@ public class Controller {
 	@GetMapping("/wish")
 	public ResponseEntity<String> getWishMessage(){
 		LocalDateTime time=LocalDateTime.now();
-		
 		int hour=time.getHour();
 		String message;
 		if(hour<12) {
@@ -33,5 +34,16 @@ public class Controller {
 			message="<h1 style='color:magenta;text-align:center'>Good Night<br>Current Time: "+time+"</h1>";
 		}
 		return new ResponseEntity<>(message,HttpStatus.OK);
+	}
+	
+	@GetMapping("/employee")
+	public ResponseEntity<Map<String,String>> getEmployee() {
+		Map<String,String> map=new HashMap<>();
+		map.put("Abinash","Developer");
+		map.put("Santosh","QA Analyst");
+		map.put("Sachin","Devops");
+		map.put("Akash","Front-end");
+		return new ResponseEntity<>(map,HttpStatus.OK);
+		
 	}
 }
