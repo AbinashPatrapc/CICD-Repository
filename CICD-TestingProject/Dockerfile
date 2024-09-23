@@ -11,7 +11,7 @@ FROM openjdk:11-jdk
 
 WORKDIR /app/cicd-testingproject
 
-COPY target/cicd-testingproject-1.jar cicd-testingproject-1.jar
+COPY /harness/CICD-TestingProject/target/cicd-testingproject-1.jar cicd-testingproject-1.jar
 
 EXPOSE 9898
 
