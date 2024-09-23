@@ -43,6 +43,8 @@ public class Controller {
 		map.put("Santosh","QA Analyst");
 		map.put("Sachin","Devops");
 		map.put("Akash","Front-end");
+		map.put("Virat","Service-now");
+		map.put("Sunny","SAP");
 		return new ResponseEntity<>(map,HttpStatus.OK);
 		
 	}
