@@ -1,7 +1,18 @@
+#FROM openjdk:11-jdk
+
+#ADD target/cicd-testingproject-1.jar cicd-testingproject-1.jar
+
+#EXPOSE 9898
+
+#ENTRYPOINT ["java", "-jar", "/cicd-testingproject-1.jar"]
+
+
 FROM openjdk:11-jdk
 
-ADD target/cicd-testingproject-1.jar cicd-testingproject-1.jar
+WORKDIR /app/cicd-testingproject
+
+COPY target/cicd-testingproject-1.jar cicd-testingproject-1.jar
 
 EXPOSE 9898
 
-ENTRYPOINT ["java", "-jar", "/cicd-testingproject-1.jar"]
+ENTRYPOINT ["java", "-jar", "cicd-testingproject-1.jar"]
