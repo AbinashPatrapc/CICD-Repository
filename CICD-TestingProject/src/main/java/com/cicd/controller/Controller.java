@@ -40,7 +40,7 @@ public class Controller {
 	public ResponseEntity<Map<String,String>> getEmployee() {
 		Map<String,String> map=new HashMap<>();
 		map.put("Abinash","Developer");
-		map.put("Santosh","QA Analyst :::<+pipeline.stages.Clone_and_Build.variables.IMAGE_TAG>");
+		map.put("Santosh","QA Analyst");
 		map.put("Sachin","Devops");
 		map.put("Akash","Front-end");
 		map.put("Virat","Service-now");

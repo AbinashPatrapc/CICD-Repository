@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: sms970/cicd-testingproject:63
+          image: sms970/cicd-testingproject
           ports:
             - containerPort: 9898
           imagePullPolicy: Always
