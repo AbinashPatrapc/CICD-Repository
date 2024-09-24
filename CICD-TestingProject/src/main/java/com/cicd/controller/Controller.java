@@ -41,6 +41,7 @@ public class Controller {
 		Map<String,String> map=new HashMap<>();
 		map.put("Abinash","Developer");
 		map.put("Santosh","QA Analyst");
+		System.out.println("<+pipeline.stages.Clone_and_Build.variables.IMAGE_TAG>");
 //		map.put("Sachin","Devops");
 //		map.put("Akash","Front-end");
 //		map.put("Virat","Service-now");
