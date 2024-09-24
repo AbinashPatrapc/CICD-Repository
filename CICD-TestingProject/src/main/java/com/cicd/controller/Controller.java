@@ -41,12 +41,12 @@ public class Controller {
 		Map<String,String> map=new HashMap<>();
 		map.put("Abinash","Developer");
 		map.put("Santosh","QA Analyst");
-		map.put("Sachin","Devops");
-		map.put("Akash","Front-end");
-		map.put("Virat","Service-now");
-		map.put("Sunny","SAP");
-		map.put("Ruby","Markting");
-		map.put("Ronny","Lead");
+//		map.put("Sachin","Devops");
+//		map.put("Akash","Front-end");
+//		map.put("Virat","Service-now");
+//		map.put("Sunny","SAP");
+//		map.put("Ruby","Markting");
+//		map.put("Ronny","Lead");
 		return new ResponseEntity<>(map,HttpStatus.OK);
 		
 	}
