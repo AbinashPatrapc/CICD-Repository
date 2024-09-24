@@ -6,6 +6,6 @@ spec:
   selector:
     app: spring-boot-app
   ports:
-    - port: 9898
-      targetPort: 9898
+    - port: 9090
+      targetPort: 9090
   type: LoadBalancer

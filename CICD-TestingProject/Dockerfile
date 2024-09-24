@@ -13,6 +13,6 @@ WORKDIR /app/cicd-testingproject
 
 COPY /harness/CICD-TestingProject/target/cicd-testingproject-1.jar cicd-testingproject-1.jar
 
-EXPOSE 9898
+EXPOSE 9090
 
 ENTRYPOINT ["java", "-jar", "cicd-testingproject-1.jar"]
