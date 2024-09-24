@@ -39,7 +39,7 @@ public class Controller {
 	@GetMapping("/employee")
 	public ResponseEntity<Map<String,String>> getEmployee() {
 		Map<String,String> map=new HashMap<>();
-		map.put("Abinash","Developer");
+		map.put("Ashish","Developer");
 		map.put("Santosh","QA Analyst");
 		map.put("Sachin","Devops");
 		map.put("Akash","Front-end");
